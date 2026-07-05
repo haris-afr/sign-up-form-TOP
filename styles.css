@@ -52,3 +52,23 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+#page-body{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-picture{
+    height: 100vh;
+    width: auto;
+}
