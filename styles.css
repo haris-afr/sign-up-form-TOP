@@ -68,12 +68,15 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
     --sidebar-min-width: 25vw;
+    --create-account-color: #596D48;
+    --input-border-color: #E5E7EB;
+    --input-invalid-border-color: red;
+    --input-selected-border-color: blue;
 }
 
 #page-body{
     display: flex;
     flex-direction:row;
-    justify-content: space-between
 }
 
 .sidebar{
@@ -118,4 +121,24 @@ h1, h2, h3, h4, h5, h6 {
 .main-content{
     display: flex;
     flex-direction: column;
+    gap: 10%;
+    
+    flex-grow: 1;
+}
+
+.main-content-text{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+.main-content-text-section{
+    background-color: lightgray;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+
+.sign-up-form-box{
+    background-color: rgb(255, 255, 255);
+    padding-left: 8%;
+    padding-right: 8%;
 }
