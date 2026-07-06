@@ -121,24 +121,52 @@ h1, h2, h3, h4, h5, h6 {
 .main-content{
     display: flex;
     flex-direction: column;
-    gap: 10%;
-    
     flex-grow: 1;
+    justify-content: center;
 }
 
 .main-content-text{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.5rem;
 }
+
 .main-content-text-section{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: flex-end;
+    padding-bottom: 5%;
+}
+
+.main-content-text-section,
+.account-section{
     background-color: lightgray;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding: 6% 4%;
+    flex-grow: 1;
 }
 
 
 .sign-up-form-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    
     background-color: rgb(255, 255, 255);
-    padding-left: 8%;
-    padding-right: 8%;
+    padding: 4% 4%;
+
+}
+
+.main-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10% 15%;
+}
+
+.form-element{
+    display: flex;
+    flex-direction: column;
+}
+
+.account-section{
+    /* flex-grow: 1; */
 }
