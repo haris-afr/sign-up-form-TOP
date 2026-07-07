@@ -165,12 +165,15 @@ h1, h2, h3, h4, h5, h6 {
 .main-form{
     display: flex;
     flex-wrap: wrap;
-    gap: 10% 15%;
+    gap: 10% 20%;
+    padding-right: 30%;
+    padding-bottom: 3%;
 }
 
 .form-element{
     display: flex;
     flex-direction: column;
+    padding-bottom: 1%;
 }
 
 .form-element > label{
@@ -181,7 +184,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-element > input{
     all: unset;
     padding: 2px 5px;
-    width: 120%;
+    width: 130%;
     border: solid 2px;
     border-radius: 5px;
     border-color: var(--input-border-color);
