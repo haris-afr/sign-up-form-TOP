@@ -24,7 +24,7 @@
 
             <div class="sign-up-form-box">
                 <p class="sign-up-form-text">Let's do this!</p>
-                <form action="example.com/path" method="post" class="main-form">
+                <form action="example.com/path" method="post" class="main-form" id="account-creation-form">
                     <div class="form-element">
                         <label for="first_name">First Name</label>
                         <input type="text" id="first-name" required placeholder="John">
@@ -47,18 +47,18 @@
                     
                     <div class="form-element">
                         <label for="user-password">Password</label>
-                        <input type="password" id="user-password" required pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/" placeholder="Min 8 letters">
+                        <input type="password" id="user-password" minlength="8" pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/" placeholder="Min 8 characters">
                     </div>
                     
                     <div class="form-element">
                         <label for="user-confirm-password">Confirm Password</label>
-                        <input type="password" id="user-confirm-password" required pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/" placeholder="*********">
+                        <input type="password" id="user-confirm-password" minlength="8" pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/" placeholder="*********">
                     </div>
                 </form>
             </div>
 
             <div class="account-section">
-                <button class="create-account-button">Create Account</button>
+                <button type="submit" class="create-account-button" form="account-creation-form">Create Account</button>
                 <p>Already have an account? <a href="www.example.com">Log in</a></p>
             </div>
         </div>

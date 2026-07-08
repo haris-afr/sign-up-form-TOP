@@ -9,6 +9,9 @@ function setWidthSidebarBlock() {
         // console.log("end");
 }
 
+const passwordInputField = document.querySelector("#user-password");
+const confirmPasswordInputField = document.querySelector("#user-confirm-password");
+
 
 window.onresize = function(){
     setWidthSidebarBlock();
@@ -17,3 +20,4 @@ window.onresize = function(){
 window.onload = function(){
     setWidthSidebarBlock();
 }
+
