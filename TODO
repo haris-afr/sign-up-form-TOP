@@ -1,5 +1,5 @@
 add form validation
 
-password fields same check
 phone number field verification 
 phone number field remove button thingioe
+fix invalid regex

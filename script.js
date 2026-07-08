@@ -12,6 +12,17 @@ function setWidthSidebarBlock() {
 const passwordInputField = document.querySelector("#user-password");
 const confirmPasswordInputField = document.querySelector("#user-confirm-password");
 
+confirmPasswordInputField.addEventListener('input', (e) => {
+    let passwordVal = passwordInputField.value;
+
+    if (passwordVal != confirmPasswordInputField.value){
+        confirmPasswordInputField.setCustomValidity("Password fields are not the same");
+    }
+    else{
+        confirmPasswordInputField.setCustomValidity("");
+    }
+})
+
 
 window.onresize = function(){
     setWidthSidebarBlock();
