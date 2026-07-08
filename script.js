@@ -23,6 +23,8 @@ confirmPasswordInputField.addEventListener('input', (e) => {
     }
 })
 
+const phoneNumberInputField = document.querySelector("#user-phone-number");
+phoneNumberInputField.pattern = "(?:\\+[0-9]{1,4}[-. ]?)?\\(?[0-9]{1,3}?\\)?[-. ]?[0-9]{1,4}[-. ]?[0-9]{1,4}[-. ]?[0-9]{1,9}";
 
 window.onresize = function(){
     setWidthSidebarBlock();

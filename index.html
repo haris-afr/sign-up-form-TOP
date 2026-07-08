@@ -42,17 +42,17 @@
 
                     <div class="form-element">
                         <label for="user-phone-number">Phone Number</label>
-                        <input type="number" id="user-phone-number" required placeholder="+XX XXX XXXXXX">
+                        <input type="tel" id="user-phone-number" required placeholder="+XX XXX XXXXXX">
                     </div>
                     
                     <div class="form-element">
                         <label for="user-password">Password</label>
-                        <input type="password" id="user-password" minlength="8" pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/" placeholder="Min 8 characters">
+                        <input type="password" id="user-password" required minlength="8" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$\s%^&*\-]).{8,}$" placeholder="Min 8 characters">
                     </div>
                     
                     <div class="form-element">
                         <label for="user-confirm-password">Confirm Password</label>
-                        <input type="password" id="user-confirm-password" minlength="8" pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/" placeholder="*********">
+                        <input type="password" id="user-confirm-password" required minlength="8" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$\s%^&*\-]).{8,}$"" placeholder="*********">
                     </div>
                 </form>
             </div>
